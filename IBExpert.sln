@@ -5,7 +5,11 @@ VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{AA784E9B-6561-4E33-B1CE-E40C3E23EBCF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client.MVC.IBExpert", "Client.MVC.IBExpert\Client.MVC.IBExpert.csproj", "{CC17EB1C-2682-405A-8F03-3DB151CD0D67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client.MVC.IBExpert", "Client.MVC.IBExpert\Client.MVC.IBExpert.csproj", "{CC17EB1C-2682-405A-8F03-3DB151CD0D67}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{687728F2-3068-4DA5-A4EC-07114A26F4BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Debtor.API", "Debtor\Debtor.API.csproj", "{A43C4DAA-4954-4230-AB20-BD9A9618DE1D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +21,17 @@ Global
 		{CC17EB1C-2682-405A-8F03-3DB151CD0D67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC17EB1C-2682-405A-8F03-3DB151CD0D67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC17EB1C-2682-405A-8F03-3DB151CD0D67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A43C4DAA-4954-4230-AB20-BD9A9618DE1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A43C4DAA-4954-4230-AB20-BD9A9618DE1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A43C4DAA-4954-4230-AB20-BD9A9618DE1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A43C4DAA-4954-4230-AB20-BD9A9618DE1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{CC17EB1C-2682-405A-8F03-3DB151CD0D67} = {AA784E9B-6561-4E33-B1CE-E40C3E23EBCF}
+		{A43C4DAA-4954-4230-AB20-BD9A9618DE1D} = {687728F2-3068-4DA5-A4EC-07114A26F4BD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {43D2E833-6440-49EC-A148-D8EDEB604C87}
