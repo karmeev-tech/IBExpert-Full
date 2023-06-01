@@ -1,0 +1,21 @@
+﻿<Page xmlns:utu="using:Uno.Toolkit.UI" 
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      x:Class="Clients.UnoApp.Presentation.AuthPage" 
+      mc:Ignorable="d" 
+      Background="{ThemeResource BackgroundBrush}" 
+      NavigationCacheMode="Required" 
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+    <utu:AutoLayout Background="{ThemeResource PrimaryInverseBrush}">
+        <utu:AutoLayout utu:AutoLayout.PrimaryAlignment="Stretch">
+            <utu:AutoLayout Background="{ThemeResource SurfaceBrush}" CornerRadius="60" utu:AutoLayout.IsIndependentLayout="True" Margin="820,322,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="280" Height="271">
+                <utu:AutoLayout utu:AutoLayout.CounterAlignment="Start" Width="288" />
+            </utu:AutoLayout>
+            <PasswordBox PlaceholderText="Ключ" utu:AutoLayout.IsIndependentLayout="True" Margin="874,452,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="184" Height="26" Style="{StaticResource OutlinedPasswordBoxStyle}" />
+            <TextBox utu:AutoLayout.IsIndependentLayout="True" Margin="874,378,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="184" Height="53" PlaceholderText="Имя" Style="{StaticResource OutlinedTextBoxStyle}" />
+            <HyperlinkButton Content="Забыли ключ?" utu:AutoLayout.IsIndependentLayout="True" Margin="916,544,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" />
+            <Button Content="Войти" utu:AutoLayout.IsIndependentLayout="True" Margin="919,613,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Style="{StaticResource ElevatedButtonStyle}" />
+        </utu:AutoLayout>
+    </utu:AutoLayout>
+</Page>
