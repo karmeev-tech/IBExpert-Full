@@ -12,8 +12,8 @@
     Version="1.0.0.0" />
 
   <Properties>
-	<DisplayName>Clients.UnoApp</DisplayName>
-	<PublisherDisplayName>Clients.UnoApp</PublisherDisplayName>
+	<DisplayName>iBExpert</DisplayName>
+	<PublisherDisplayName>KarmeevTech</PublisherDisplayName>
   </Properties>
 
   <Dependencies>
@@ -30,9 +30,10 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="$targetentrypoint$">
       <uap:VisualElements
-        DisplayName="Clients.UnoApp"
-        Description="Clients.UnoApp">
+        DisplayName="iBExpert"
+        Description="based on UNO, NET7, UWP, WPF">
         <uap:SplashScreen BackgroundColor="#086AD1"/>
+        <uap:DefaultTile/>
       </uap:VisualElements>
     </Application>
   </Applications>

@@ -1,3 +1,7 @@
+using Microsoft.UI.Xaml;
+using System.Runtime.CompilerServices;
+using Windows.UI.ViewManagement;
+
 namespace Clients.UnoApp
 {
     public class App : Application
@@ -48,7 +52,9 @@ namespace Clients.UnoApp
                     })
                     .UseNavigation(RegisterRoutes)
                 );
+
             _window = builder.Window;
+            _window.Title = "iBExpert";
 
             Host = await builder.NavigateAsync<Shell>();
         }
