@@ -25,5 +25,5 @@ jobs:
       run: dotnet build
     - name: Build UnoApp (Windows)
       working-directory: Clients/Clients.UnoApp/Clients.UnoApp.Windows
-      run: dotnet build
+      run: dotnet build /p:EnableWindowsTargeting=true
 
