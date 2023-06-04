@@ -6,7 +6,7 @@ using System.Net;
 
 namespace Debtor.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]/get")]
     [ApiController]
     public class DebtorController : ControllerBase
     {
