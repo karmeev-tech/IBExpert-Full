@@ -1,0 +1,40 @@
+# This is a generated file. Not intended for manual editing.
+version: "3.4"
+services:
+  debtor.api:
+    build:
+      context: "E:\\WORK\\repos\\IBExpert-Full"
+      dockerfile: "Services/Debtor/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net7.0/Debtor.API.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      ASPNETCORE_URLS: "https://+:443;http://+:80"
+    image: "debtorapi:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\Kuririn\\AppData\\Roaming\\ASP.NET\\Https:/root/.aspnet/https"
+    - "C:\\Users\\Kuririn\\AppData\\Roaming\\Microsoft\\UserSecrets:/root/.microsoft/usersecrets"
+    - "E:\\WORK\\repos\\IBExpert-Full\\Services\\Debtor:/app:rw"
+    working_dir: "/app"
+  gateway.ocelot:
+    build:
+      context: "E:\\WORK\\repos\\IBExpert-Full"
+      dockerfile: "Gateway/Gateway.Ocelot/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net7.0/Gateway.Ocelot.dll"
+    environment:
+      ASPNETCORE_URLS: "https://+:443;http://+:80"
+    image: "gatewayocelot:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\Kuririn\\AppData\\Roaming\\ASP.NET\\Https:/root/.aspnet/https"
+    - "C:\\Users\\Kuririn\\AppData\\Roaming\\Microsoft\\UserSecrets:/root/.microsoft/usersecrets"
+    - "E:\\WORK\\repos\\IBExpert-Full\\Gateway\\Gateway.Ocelot:/app:rw"
+    working_dir: "/app"

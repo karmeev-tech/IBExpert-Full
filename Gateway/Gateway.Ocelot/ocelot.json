@@ -1,0 +1,20 @@
+{
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/gateway/Debtor",
+      "UpstreamHttpMethod": [ "Get" ],
+
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "debtor.api",
+          "Port": 80
+        }
+      ],
+      "DownstreamPathTemplate": "/Debtor/get/"
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5183"
+  }
+}

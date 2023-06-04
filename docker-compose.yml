@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  gateway.ocelot:
+    image: ${DOCKER_REGISTRY-}gatewayocelot
+    build:
+      context: .
+      dockerfile: Gateway/Gateway.Ocelot/Dockerfile
+  debtor.api:
+    image: ${DOCKER_REGISTRY-}debtorapi
+    build:
+      context: .
+      dockerfile: Services/Debtor/Dockerfile
