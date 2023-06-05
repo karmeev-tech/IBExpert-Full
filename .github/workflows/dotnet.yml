@@ -23,4 +23,10 @@ jobs:
     - name: Build UnoApp
       working-directory: Clients/Clients.UnoApp/Clients.UnoApp
       run: dotnet build
+    - name: Build ArbitrAPI
+      working-directory: Services/Arbitr/Arbitr.API/Arbitr.API
+      run: dotnet build
+    - name: Build DebtorAPI
+      working-directory: Services/Debtor/Debtor.API
+      run: dotnet build
 

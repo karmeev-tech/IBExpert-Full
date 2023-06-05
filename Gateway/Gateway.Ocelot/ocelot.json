@@ -1,7 +1,7 @@
 {
   "Routes": [
     {
-      "UpstreamPathTemplate": "/gateway/Debtor/get",
+      "UpstreamPathTemplate": "/gateway/Debtor",
       "UpstreamHttpMethod": [ "Get" ],
 
       "DownstreamScheme": "http",
@@ -11,7 +11,20 @@
           "Port": 80
         }
       ],
-      "DownstreamPathTemplate": "/Debtor/get/"
+      "DownstreamPathTemplate": "/Debtor/"
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Arbitr",
+      "UpstreamHttpMethod": [ "Get" ],
+
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "arbitr.api",
+          "Port": 81
+        }
+      ],
+      "DownstreamPathTemplate": "/Arbitr/"
     }
   ],
   "GlobalConfiguration": {

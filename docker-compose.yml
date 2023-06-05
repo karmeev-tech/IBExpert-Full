@@ -3,11 +3,21 @@ version: '3.4'
 services:
   gateway.ocelot:
     image: ${DOCKER_REGISTRY-}gatewayocelot
+    container_name: Desktop.Gateway
     build:
       context: .
       dockerfile: Gateway/Gateway.Ocelot/Dockerfile
+
   debtor.api:
     image: ${DOCKER_REGISTRY-}debtorapi
+    container_name: Debtor.Api
     build:
       context: .
       dockerfile: Services/Debtor/Dockerfile
+
+  arbitr.api:
+    image: ${DOCKER_REGISTRY-}arbitrapi
+    container_name: Arbitr.Api
+    build:
+      context: .
+      dockerfile: Services/Arbitr/Arbitr.API/Dockerfile
