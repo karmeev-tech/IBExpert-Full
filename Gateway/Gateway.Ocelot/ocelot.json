@@ -1,7 +1,7 @@
 {
   "Routes": [
     {
-      "UpstreamPathTemplate": "/gateway/Debtor",
+      "UpstreamPathTemplate": "/gateway/Debtor/get",
       "UpstreamHttpMethod": [ "Get" ],
 
       "DownstreamScheme": "http",
