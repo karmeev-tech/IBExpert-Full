@@ -1,6 +1,4 @@
-using Microsoft.UI.Xaml;
-using System.Runtime.CompilerServices;
-using Windows.UI.ViewManagement;
+using Clients.UnoApp.Presentation.Registration;
 
 namespace Clients.UnoApp
 {
@@ -65,6 +63,7 @@ namespace Clients.UnoApp
                 new ViewMap(ViewModel: typeof(ShellViewModel)),
                 new ViewMap<MainPage, MainViewModel>(),
                 new ViewMap<AuthPage, AuthViewModel>(),
+                new ViewMap<RegistrationPage, RegistrationViewModel>(),
                 new DataViewMap<SecondPage, SecondViewModel, Entity>()
             );
 
@@ -75,6 +74,7 @@ namespace Clients.UnoApp
                     new RouteMap("Main", View: views.FindByViewModel<MainViewModel>()),
                     new RouteMap("Auth", View: views.FindByViewModel<AuthViewModel>()),
                     new RouteMap("Second", View: views.FindByViewModel<SecondViewModel>()),
+                    new RouteMap("Registration", View: views.FindByViewModel<RegistrationViewModel>()),
                     }
                 )
             );

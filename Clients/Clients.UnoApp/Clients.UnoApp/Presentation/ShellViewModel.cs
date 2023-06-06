@@ -1,3 +1,5 @@
+using Clients.UnoApp.Presentation.Registration;
+
 namespace Clients.UnoApp.Presentation
 {
     public class ShellViewModel
@@ -13,7 +15,7 @@ namespace Clients.UnoApp.Presentation
 
         public async Task Start()
         {
-            await Navigator.NavigateViewModelAsync<AuthViewModel>(this);
+            await Navigator.NavigateViewModelAsync<RegistrationViewModel>(this);
         }
     }
 }
