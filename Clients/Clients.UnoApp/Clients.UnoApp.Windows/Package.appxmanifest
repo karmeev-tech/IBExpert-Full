@@ -8,13 +8,13 @@
 
   <Identity
     Name="0DB80911-FC06-491D-9E84-0A37E08A198F"
-    Publisher="O=Clients.UnoApp"
+    Publisher="CN=KarmeevTech"
     Version="1.0.0.0" />
 
   <Properties>
 	<DisplayName>iBExpert</DisplayName>
 	<PublisherDisplayName>KarmeevTech</PublisherDisplayName>
-	<Logo></Logo>
+	<Logo>PackageLogo.png</Logo>
   </Properties>
 
   <Dependencies>
@@ -32,9 +32,10 @@
       EntryPoint="$targetentrypoint$">
       <uap:VisualElements
         DisplayName="iBExpert"
-        Description="based on UNO, NET7, UWP, WPF">
-        <uap:SplashScreen BackgroundColor="#086AD1"/>
-        <uap:DefaultTile/>
+        Description="based on UNO, NET7, UWP" BackgroundColor="green" Square150x150Logo="MediumTile.png" Square44x44Logo="Resources\AppLogo\AppIcon.png">
+        <uap:SplashScreen BackgroundColor="#B6E388" Image="SplashScreen.png"/>
+        <uap:DefaultTile Square71x71Logo="SmallTile.png" Wide310x150Logo="WideTile.png" Square310x310Logo="LargeTile.png"/>
+        <uap:LockScreen BadgeLogo="Resources\Logo\BadgeLogo.png" Notification="badge"/>
       </uap:VisualElements>
     </Application>
   </Applications>

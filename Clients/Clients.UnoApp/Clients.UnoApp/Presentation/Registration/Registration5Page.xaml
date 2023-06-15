@@ -1,0 +1,51 @@
+﻿<Page
+    xmlns:uen="using:Uno.Extensions.Navigation.UI"
+      xmlns:utu="using:Uno.Toolkit.UI"
+      xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+      xmlns:um="using:Uno.Material"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="using:Clients.UnoApp.Presentation.Registration"
+      x:Class="Clients.UnoApp.Presentation.Registration.Registration5Page"
+      mc:Ignorable="d"
+      Background="{ThemeResource BackgroundBrush}"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+
+    <utu:AutoLayout Background="{ThemeResource PrimaryInverseBrush}">
+        <utu:AutoLayout utu:AutoLayout.PrimaryAlignment="Stretch">
+            <utu:AutoLayout Background="{ThemeResource SurfaceBrush}" CornerRadius="60" PrimaryAxisAlignment="Center" utu:AutoLayout.IsIndependentLayout="True" Margin="97,29,97,30" VerticalAlignment="Center" HorizontalAlignment="Center" Width="983" Height="674">
+                <utu:AutoLayout utu:AutoLayout.CounterAlignment="Center" Width="288" />
+            </utu:AutoLayout>
+            <utu:AutoLayout CornerRadius="0,0,60,60" utu:AutoLayout.IsIndependentLayout="True" Margin="97,574,97,30" VerticalAlignment="Center" HorizontalAlignment="Center" Width="983" Height="129">
+                <Image Source="/Clients.UnoApp/Assets/background.jpg" Stretch="UniformToFill" utu:AutoLayout.IsIndependentLayout="True" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Width="983" Height="129" />
+            </utu:AutoLayout>
+            <Button Command="{Binding GoToSecond}" Content="Далее" utu:AutoLayout.IsIndependentLayout="True" Margin="918,613,169,80" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{ThemeResource SurfaceInverseBrush}" Style="{StaticResource ElevatedButtonStyle}" />
+            <TextBox utu:AutoLayout.IsIndependentLayout="True" Margin="413,236,413,441" VerticalAlignment="Center" HorizontalAlignment="Center" Width="351" Height="56" PlaceholderText="Номер, дата, срок" PlaceholderForeground="{ThemeResource OnBackgroundLowBrush}" BorderBrush="{ThemeResource PrimaryBrush}" BorderThickness="1" Style="{StaticResource OutlinedTextBoxStyle}" />
+            <utu:AutoLayout utu:AutoLayout.IsIndependentLayout="True" Margin="413,292,413,399" VerticalAlignment="Center" HorizontalAlignment="Center" Width="351" Height="42">
+                <utu:AutoLayout Padding="16,8" CornerRadius="4" Orientation="Horizontal" Height="56">
+                    <utu:AutoLayout PrimaryAxisAlignment="Center" utu:AutoLayout.CounterAlignment="Center" utu:AutoLayout.PrimaryAlignment="Stretch">
+                        <utu:AutoLayout Spacing="4" Orientation="Horizontal">
+                            <TextBlock Text="дополнительного страхования" utu:AutoLayout.CounterAlignment="Center" Foreground="{ThemeResource OnSurfaceBrush}" Style="{StaticResource BodyLarge}" />
+                            <Rectangle Fill="{ThemeResource OnSecondaryBrush}" utu:AutoLayout.CounterAlignment="Center" Width="1" Height="17" />
+                        </utu:AutoLayout>
+                    </utu:AutoLayout>
+                </utu:AutoLayout>
+            </utu:AutoLayout>
+            <utu:AutoLayout utu:AutoLayout.IsIndependentLayout="True" Margin="498,140,498,541" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBlock Text="Договор" utu:AutoLayout.CounterAlignment="Start" Foreground="{ThemeResource OnSurfaceBrush}" Style="{StaticResource DisplayMedium}" />
+            </utu:AutoLayout>
+            <utu:AutoLayout utu:AutoLayout.IsIndependentLayout="True" Margin="413,422,413,269" VerticalAlignment="Center" HorizontalAlignment="Center" Width="351" Height="42">
+                <utu:AutoLayout Padding="16,8" CornerRadius="4" Orientation="Horizontal" Height="56">
+                    <utu:AutoLayout PrimaryAxisAlignment="Center" utu:AutoLayout.CounterAlignment="Center" utu:AutoLayout.PrimaryAlignment="Stretch">
+                        <utu:AutoLayout Spacing="4" Orientation="Horizontal">
+                            <TextBlock Text="для направления корреспонденции" utu:AutoLayout.CounterAlignment="Center" Foreground="{ThemeResource OnSurfaceBrush}" Style="{StaticResource BodyLarge}" />
+                            <Rectangle Fill="{ThemeResource OnSecondaryBrush}" utu:AutoLayout.CounterAlignment="Center" Width="1" Height="17" />
+                        </utu:AutoLayout>
+                    </utu:AutoLayout>
+                </utu:AutoLayout>
+            </utu:AutoLayout>
+            <TextBox utu:AutoLayout.IsIndependentLayout="True" Margin="413,366,413,311" VerticalAlignment="Center" HorizontalAlignment="Center" Width="351" Height="56" PlaceholderText="Место под адрес :)" PlaceholderForeground="{ThemeResource OnBackgroundLowBrush}" BorderBrush="{ThemeResource PrimaryBrush}" BorderThickness="1" Style="{StaticResource OutlinedTextBoxStyle}" />
+        </utu:AutoLayout>
+    </utu:AutoLayout>
+</Page>

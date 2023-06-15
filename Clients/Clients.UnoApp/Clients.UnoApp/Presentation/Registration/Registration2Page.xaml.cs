@@ -14,9 +14,9 @@ namespace Clients.UnoApp.Presentation.Registration
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class RegistrationPage2 : Page
+    public sealed partial class Registration2Page : Page
     {
-        public RegistrationPage2()
+        public Registration2Page()
         {
             this.InitializeComponent();
         }

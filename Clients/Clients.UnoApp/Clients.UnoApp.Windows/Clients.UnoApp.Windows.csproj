@@ -15,10 +15,72 @@
 		<!-- <WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained> -->
 		<!-- This bundles the .NET Core libraries (Uncomment for packaged builds)  -->
 		<SelfContained>true</SelfContained>
+		<PackageCertificateThumbprint>7DE67F5D09062959E283878DFC03F5AA3FD5055C</PackageCertificateThumbprint>
+		<AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
 	</PropertyGroup>
 
 	<ItemGroup>
 		<Content Include="Images\**" />
+		<None Remove="Resources\AppLogo\AppIcon.scale-100.png" />
+		<None Remove="Resources\AppLogo\AppIcon.scale-125.png" />
+		<None Remove="Resources\AppLogo\AppIcon.scale-150.png" />
+		<None Remove="Resources\AppLogo\AppIcon.scale-200.png" />
+		<None Remove="Resources\AppLogo\AppIcon.scale-400.png" />
+		<None Remove="Resources\AppLogo\AppIcon.targetsize-16.png" />
+		<None Remove="Resources\AppLogo\AppIcon.targetsize-16_altform-lightunplated.png" />
+		<None Remove="Resources\AppLogo\AppIcon.targetsize-16_altform-unplated.png" />
+		<None Remove="Resources\AppLogo\AppIcon.targetsize-24.png" />
+		<None Remove="Resources\AppLogo\AppIcon.targetsize-24_altform-lightunplated.png" />
+		<None Remove="Resources\AppLogo\AppIcon.targetsize-24_altform-unplated.png" />
+		<None Remove="Resources\AppLogo\AppIcon.targetsize-256.png" />
+		<None Remove="Resources\AppLogo\AppIcon.targetsize-256_altform-lightunplated.png" />
+		<None Remove="Resources\AppLogo\AppIcon.targetsize-256_altform-unplated.png" />
+		<None Remove="Resources\AppLogo\AppIcon.targetsize-32.png" />
+		<None Remove="Resources\AppLogo\AppIcon.targetsize-32_altform-lightunplated.png" />
+		<None Remove="Resources\AppLogo\AppIcon.targetsize-32_altform-unplated.png" />
+		<None Remove="Resources\AppLogo\AppIcon.targetsize-48.png" />
+		<None Remove="Resources\AppLogo\AppIcon.targetsize-48_altform-lightunplated.png" />
+		<None Remove="Resources\AppLogo\AppIcon.targetsize-48_altform-unplated.png" />
+		<None Remove="Resources\Logo\BadgeLogo.scale-100.png" />
+		<None Remove="Resources\Logo\BadgeLogo.scale-125.png" />
+		<None Remove="Resources\Logo\BadgeLogo.scale-150.png" />
+		<None Remove="Resources\Logo\BadgeLogo.scale-200.png" />
+		<None Remove="Resources\Logo\BadgeLogo.scale-400.png" />
+		<None Remove="SplashScreen.scale-100.png" />
+		<None Remove="SplashScreen.scale-125.png" />
+		<None Remove="SplashScreen.scale-150.png" />
+		<None Remove="SplashScreen.scale-200.png" />
+		<None Remove="SplashScreen.scale-400.png" />
+		<Content Include="Resources\AppLogo\AppIcon.scale-100.png" />
+		<Content Include="Resources\AppLogo\AppIcon.scale-125.png" />
+		<Content Include="Resources\AppLogo\AppIcon.scale-150.png" />
+		<Content Include="Resources\AppLogo\AppIcon.scale-200.png" />
+		<Content Include="Resources\AppLogo\AppIcon.scale-400.png" />
+		<Content Include="Resources\AppLogo\AppIcon.targetsize-16.png" />
+		<Content Include="Resources\AppLogo\AppIcon.targetsize-16_altform-lightunplated.png" />
+		<Content Include="Resources\AppLogo\AppIcon.targetsize-16_altform-unplated.png" />
+		<Content Include="Resources\AppLogo\AppIcon.targetsize-24.png" />
+		<Content Include="Resources\AppLogo\AppIcon.targetsize-24_altform-lightunplated.png" />
+		<Content Include="Resources\AppLogo\AppIcon.targetsize-24_altform-unplated.png" />
+		<Content Include="Resources\AppLogo\AppIcon.targetsize-256.png" />
+		<Content Include="Resources\AppLogo\AppIcon.targetsize-256_altform-lightunplated.png" />
+		<Content Include="Resources\AppLogo\AppIcon.targetsize-256_altform-unplated.png" />
+		<Content Include="Resources\AppLogo\AppIcon.targetsize-32.png" />
+		<Content Include="Resources\AppLogo\AppIcon.targetsize-32_altform-lightunplated.png" />
+		<Content Include="Resources\AppLogo\AppIcon.targetsize-32_altform-unplated.png" />
+		<Content Include="Resources\AppLogo\AppIcon.targetsize-48.png" />
+		<Content Include="Resources\AppLogo\AppIcon.targetsize-48_altform-lightunplated.png" />
+		<Content Include="Resources\AppLogo\AppIcon.targetsize-48_altform-unplated.png" />
+		<Content Include="Resources\Logo\BadgeLogo.scale-100.png" />
+		<Content Include="Resources\Logo\BadgeLogo.scale-125.png" />
+		<Content Include="Resources\Logo\BadgeLogo.scale-150.png" />
+		<Content Include="Resources\Logo\BadgeLogo.scale-200.png" />
+		<Content Include="Resources\Logo\BadgeLogo.scale-400.png" />
+		<Content Include="SplashScreen.scale-100.png" />
+		<Content Include="SplashScreen.scale-125.png" />
+		<Content Include="SplashScreen.scale-150.png" />
+		<Content Include="SplashScreen.scale-200.png" />
+		<Content Include="SplashScreen.scale-400.png" />
 		<Manifest Include="$(ApplicationManifest)" />
 	</ItemGroup>
 
@@ -47,24 +109,21 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<!--
-		If you encounter this error message:
-
-			error NETSDK1148: A referenced assembly was compiled using a newer version of Microsoft.Windows.SDK.NET.dll.
-			Please update to a newer .NET SDK in order to reference this assembly.
-
-		This means that the two packages below must be aligned with the "build" version number of
-		the "Microsoft.Windows.SDK.BuildTools" package above, and the "revision" version number
-		must be the highest found in https://www.nuget.org/packages/Microsoft.Windows.SDK.NET.Ref.
-		-->
-		<!-- <FrameworkReference Update="Microsoft.Windows.SDK.NET.Ref" RuntimeFrameworkVersion="10.0.22621.28" />
-		<FrameworkReference Update="Microsoft.Windows.SDK.NET.Ref" TargetingPackVersion="10.0.22621.28" /> -->
-	</ItemGroup>
-
-	<ItemGroup>
 		<ProjectReference Include="..\Clients.UnoApp\Clients.UnoApp.csproj" />
 		<ProjectReference Include="..\Clients.UnoApp.DataContracts\Clients.UnoApp.DataContracts.csproj" />
 	</ItemGroup>
 
 	<Import Project="..\Clients.UnoApp.Base\base.props" />
+
+	<ItemGroup>
+	  <SourceGeneratorInput Remove="Resources\AppLogo\AppIcon.targetsize-256_altform-unplated.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <SourceGeneratorInput Remove="Resources\AppLogo\AppIcon.targetsize-32_altform-lightunplated.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <SourceGeneratorInput Remove="Resources\AppLogo\AppIcon.targetsize-24_altform-lightunplated.png" />
+	</ItemGroup>
 </Project>

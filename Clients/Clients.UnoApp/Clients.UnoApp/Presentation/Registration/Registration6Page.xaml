@@ -1,0 +1,39 @@
+﻿<Page
+    xmlns:uen="using:Uno.Extensions.Navigation.UI"
+      xmlns:utu="using:Uno.Toolkit.UI"
+      xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+      xmlns:um="using:Uno.Material"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="using:Clients.UnoApp.Presentation.Registration"
+      x:Class="Clients.UnoApp.Presentation.Registration.Registration6Page"
+      mc:Ignorable="d"
+      Background="{ThemeResource BackgroundBrush}"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+    <Page.Resources>
+        <x:String x:Key="Icon_Place">F1 M 7 0 C 3.130000114440918 0 0 3.130000114440918 0 7 C 0 12.25 7 20 7 20 C 7 20 14 12.25 14 7 C 14 3.130000114440918 10.869999885559082 0 7 0 Z M 7 9.5 C 5.620000004768372 9.5 4.5 8.379999995231628 4.5 7 C 4.5 5.620000004768372 5.620000004768372 4.5 7 4.5 C 8.379999995231628 4.5 9.5 5.620000004768372 9.5 7 C 9.5 8.379999995231628 8.379999995231628 9.5 7 9.5 Z</x:String>
+    </Page.Resources>
+    <utu:AutoLayout Background="{ThemeResource PrimaryInverseBrush}">
+        <utu:AutoLayout utu:AutoLayout.PrimaryAlignment="Stretch">
+            <utu:AutoLayout Background="{ThemeResource SurfaceBrush}" CornerRadius="60" PrimaryAxisAlignment="Center" utu:AutoLayout.IsIndependentLayout="True" Margin="97,29,97,30" VerticalAlignment="Center" HorizontalAlignment="Center" Width="983" Height="674">
+                <utu:AutoLayout utu:AutoLayout.CounterAlignment="Center" Width="288" />
+            </utu:AutoLayout>
+            <utu:AutoLayout CornerRadius="60" utu:AutoLayout.IsIndependentLayout="True" Margin="97,29,97,30" VerticalAlignment="Center" HorizontalAlignment="Center" Width="983" Height="674">
+                <Image Source="/Clients.UnoApp/Assets/background.jpg" Stretch="UniformToFill" utu:AutoLayout.IsIndependentLayout="True" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Width="983" Height="674" />
+            </utu:AutoLayout>
+            <Button Command="{Binding GoToSecond}" Content="Завершить" utu:AutoLayout.IsIndependentLayout="True" Margin="520,616,534,77" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{ThemeResource SurfaceInverseBrush}" Style="{StaticResource ElevatedButtonStyle}" />
+            <utu:AutoLayout utu:AutoLayout.IsIndependentLayout="True" Margin="515,415,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="407" Height="76" />
+            <utu:AutoLayout Background="{ThemeResource SurfaceBrush}" CornerRadius="28" utu:AutoLayout.IsIndependentLayout="True" Margin="445,222,444,271" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <utu:AutoLayout utu:AutoLayout.CounterAlignment="Start" Width="288">
+                    <utu:AutoLayout Spacing="16" Padding="24">
+                        <PathIcon Data="{StaticResource Icon_Place}" utu:AutoLayout.CounterAlignment="Center" Foreground="{ThemeResource SecondaryBrush}" />
+                        <TextBlock TextAlignment="Center" TextWrapping="Wrap" Text="На заметку!" Foreground="{ThemeResource OnSurfaceBrush}" Style="{StaticResource HeadlineSmall}" />
+                        <TextBlock TextWrapping="Wrap" Text="Оптимизация работы = гарантия развития" Foreground="{ThemeResource OnSurfaceVariantBrush}" />
+                    </utu:AutoLayout>
+                    <Button HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="24,0,24,24" utu:AutoLayout.CounterAlignment="End" Foreground="{ThemeResource PrimaryBrush}" CornerRadius="20" Style="{StaticResource TextButtonStyle}" />
+                </utu:AutoLayout>
+            </utu:AutoLayout>
+        </utu:AutoLayout>
+    </utu:AutoLayout>
+</Page>

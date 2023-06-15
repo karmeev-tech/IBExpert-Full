@@ -80,17 +80,25 @@
 
 	<ItemGroup>
 	  <None Remove="Presentation\AuthPage.xaml" />
+	  <None Remove="Presentation\Registration\Registration2Page.xaml" />
+	  <None Remove="Presentation\Registration\Registration3Page.xaml" />
+	  <None Remove="Presentation\Registration\Registration4Page.xaml" />
+	  <None Remove="Presentation\Registration\Registration5Page.xaml" />
+	  <None Remove="Presentation\Registration\Registration6Page.xaml" />
 	  <None Remove="Presentation\Registration\RegistrationPage.xaml" />
-	  <None Remove="Presentation\Registration\RegistrationPage2.xaml" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <UpToDateCheckInput Remove="Presentation\AuthPage.xaml" />
+	  <UpToDateCheckInput Remove="Presentation\Registration\Registration2Page.xaml" />
+	  <UpToDateCheckInput Remove="Presentation\Registration\Registration3Page.xaml" />
+	  <UpToDateCheckInput Remove="Presentation\Registration\Registration4Page.xaml" />
+	  <UpToDateCheckInput Remove="Presentation\Registration\Registration5Page.xaml" />
+	  <UpToDateCheckInput Remove="Presentation\Registration\Registration6Page.xaml" />
 	  <UpToDateCheckInput Remove="Presentation\Registration\RegistrationPage.xaml" />
-	  <UpToDateCheckInput Remove="Presentation\Registration\RegistrationPage2.xaml" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Resource Include="Assets\background.jpg" />
+	  <UnoImage Include="Assets\background.jpg" />
 	</ItemGroup>
 </Project>

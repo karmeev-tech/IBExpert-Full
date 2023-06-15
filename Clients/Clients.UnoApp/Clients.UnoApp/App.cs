@@ -64,6 +64,11 @@ namespace Clients.UnoApp
                 new ViewMap<MainPage, MainViewModel>(),
                 new ViewMap<AuthPage, AuthViewModel>(),
                 new ViewMap<RegistrationPage, RegistrationViewModel>(),
+                new ViewMap<Registration2Page, RegistrationViewModel2>(),
+                new ViewMap<Registration3Page, RegistrationViewModel3>(),
+                new ViewMap<Registration4Page, RegistrationViewModel4>(),
+                new ViewMap<Registration5Page, RegistrationViewModel5>(),
+                new ViewMap<Registration6Page, RegistrationViewModel6>(),
                 new DataViewMap<SecondPage, SecondViewModel, Entity>()
             );
 
@@ -72,9 +77,14 @@ namespace Clients.UnoApp
                     Nested: new RouteMap[]
                     {
                     new RouteMap("Main", View: views.FindByViewModel<MainViewModel>()),
-                    new RouteMap("Auth", View: views.FindByViewModel<AuthViewModel>()),
                     new RouteMap("Second", View: views.FindByViewModel<SecondViewModel>()),
                     new RouteMap("Registration", View: views.FindByViewModel<RegistrationViewModel>()),
+                    new RouteMap("Registration2", View: views.FindByViewModel<RegistrationViewModel2>()),
+                    new RouteMap("Registration3", View: views.FindByViewModel<RegistrationViewModel3>()),
+                    new RouteMap("Registration4", View: views.FindByViewModel<RegistrationViewModel4>()),
+                    new RouteMap("Registration5", View: views.FindByViewModel<RegistrationViewModel5>()),
+                    new RouteMap("Registration6", View: views.FindByViewModel<RegistrationViewModel6>()),
+                    new RouteMap("Auth", View: views.FindByViewModel<AuthViewModel>()),
                     }
                 )
             );
