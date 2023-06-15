@@ -1,3 +1,5 @@
+using Arbitr.API.Api;
+using Arbitr.API.Infrastructure;
 using Arbitr.API.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,11 +9,6 @@ namespace Arbitr.API.Controllers
     [Route("[controller]")]
     public class ArbitrController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
-
         private readonly ILogger<ArbitrController> _logger;
 
         public ArbitrController(ILogger<ArbitrController> logger)
@@ -20,15 +17,30 @@ namespace Arbitr.API.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<Arbitrator> Get()
+        public async Task<IActionResult> Get()
         {
-            return Enumerable.Range(1, 5).Select(index => new Arbitrator
+            return Ok();
+        }
+
+        //POST api/<DebtorController>
+        [HttpPost]
+        public async Task<IActionResult> Post([FromBody] SendArbitrRequest request)
+        {
+            var model = new Arbitrator
             {
-                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-                TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-            })
-            .ToArray();
+                Name = request.Name,
+                Organization = request.Organization,
+                GosReg = request.GosReg,
+                Insurance = request.Insurance,
+                AboutInsurance = request.AboutInsurance,
+                ExtInsurance = request.ExtInsurance,
+                SecondDocInsurance = request.SecondDocInsurance,
+                SecondGosReg = request.SecondGosReg,
+                DeliverCorrespondAd = request.DeliverCorrespondAd,
+            };
+
+            ArbitrDbManager.SendToDb(model);
+            return Ok(model);
         }
     }
 }

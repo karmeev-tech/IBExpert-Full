@@ -2,12 +2,16 @@ namespace Arbitr.API.Models
 {
     public class Arbitrator
     {
-        public DateOnly Date { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; } = null!;
+        public string Organization { get; set; } = null!;
+        public string GosReg { get; set; } = null!;
+        public string Insurance { get; set; } = null!;
+        public string AboutInsurance { get; set; } = null!;
+        public string ExtInsurance { get; set; } = null!;
+        public string SecondGosReg { get; set; } = null!;
+        public string SecondDocInsurance { get; set; } = null!;
+        public string DeliverCorrespondAd { get; set; } = null!;
 
-        public int TemperatureC { get; set; }
-
-        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-
-        public string? Summary { get; set; }
     }
 }
